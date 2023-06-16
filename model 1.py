@@ -87,7 +87,6 @@ class preprocessor:
     return processed_sens
 
 nltk.download('stopwords')
-nltk.download('punkt')
 processed_sentences= preprocessor(list(X)).run()
 
 for i in range(len(processed_sentences)):
