@@ -1,6 +1,7 @@
 import streamlit as st
 import nltk
 nltk.download("punkt")
+nltk.download('stopwords')
 
 #giving a title
 st.title("Post your Doubts")
