@@ -5,3 +5,4 @@ numpy==1.23.5
 nltk==3.8.1
 pickleshare==0.7.5
 strings2==0.0.4
+regex==2023.6.3
