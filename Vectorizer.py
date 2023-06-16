@@ -23,6 +23,9 @@ y = np.array(data['Category'])
 
 ref_dict = {'UPSC':0,'Research':1,'Corporate':2}
 
+nltk.download('stopwords')
+nltk.download('punkt')
+
 class preprocessor:
   def __init__(self, sentences):
     self.sen = sentences
@@ -86,8 +89,6 @@ class preprocessor:
       processed_sens.append(processed_sen)
     return processed_sens
 
-nltk.download('stopwords')
-nltk.download('punkt')
 processed_sentences= preprocessor(list(X)).run()
 
 for i in range(len(processed_sentences)):
